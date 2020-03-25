@@ -1,0 +1,17 @@
+
+<a href="#" class="list-group-item clearfix" (click)="onrecipeclicked()" >
+  <div class="float-left">
+      <h4>{{recipe.name}}</h4>
+      <p>{{recipe.description}}</p>
+    </div>    
+    <span class="float-right">
+<img
+[src]="recipe.imagepath"
+[alt]="recipe.name"
+class="img-fluid"
+style="max-height: 50px">
+    </span>
+  </a>
+
+
+

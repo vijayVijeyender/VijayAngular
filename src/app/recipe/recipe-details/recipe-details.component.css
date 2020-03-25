@@ -1,0 +1,9 @@
+.leftbottom{
+  position: absolute;
+  bottom: 71px;
+  left:85px;
+}
+.btnhoverdropdown:hover{
+  opacity: 1;
+  background-color: darkorange;
+}

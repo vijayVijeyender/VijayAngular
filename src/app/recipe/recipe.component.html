@@ -1,0 +1,10 @@
+<app-recipe-list (selectedrecipe)="selectedrecpie_recipecomponent = $event"></app-recipe-list>
+<div class="col-xs-7">
+    <app-recipe-details *ngIf="selectedrecpie_recipecomponent;else infotext"
+    [recipeselectedel]="selectedrecpie_recipecomponent"
+    ></app-recipe-details>
+    <ng-template #infotext>
+        <p>please select a recipe</p>
+    </ng-template>
+    
+</div>

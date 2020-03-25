@@ -1,0 +1,21 @@
+
+<div class="container">
+<div class="row">
+<div class="col-xs-5">
+    <button type="button" class="btn-primary btnhover">New Recipe</button>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-xs-7">
+    <app-recipe-item *ngFor="let sample of recipes"
+    [recipe]=sample
+    (selectedrecipe_item) = "onsendselecteditem(sample)"></app-recipe-item>
+  </div>
+</div>
+<div class="d-table h-60 w-100">
+  <div class="d-table-cell h-100 w-100 align-top text-right">
+    <app-recipe-details selectedrecipe = "onsendselecteditem($event)"></app-recipe-details>
+  </div>
+</div>
+</div>
+
