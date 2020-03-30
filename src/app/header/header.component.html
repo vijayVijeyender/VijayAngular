@@ -1,56 +1,28 @@
-<div class="header">
-  <div class="col-xs-12">
-    <ul>
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false" (click)="onselect('recipe')">
-        Recipe
-      </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#" >Add Recipe</a>
-          <a class="dropdown-item" href="#">Show Recipe</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Others</a>
-
-        </div>
-      </li>
-      <li><a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false"(click)="onselect('shoppinglist')">
-        Shopping
-      </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Add Shoppingitem</a>
-          <a class="dropdown-item" href="#">Show Item</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Others</a>
-
-        </div>
-      </li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </div>
-</div>
-<!-- <div class="container-fluid h-100 bg-warning">
-  <div class="row h-100">
-    <div class="col col-12 h-100">
-      <div class="row h-10">
-        <div class="col col-12 bg-danger">
-
-        </div>
-      </div>
-      <div class="row h-90">
-        <div class="col col-6">
-          <div class="d-table h-100 w-100">
-            <div class="d-table-cell h-100 w-100 align-top text-right">
-              <p>Vijayendar</p>
-            </div>
-          </div>
-        </div>
-        <div class="col col-6">
-          <p>Athavan</p>
-          <button (click)="goToRecipe()">Recipe</button>
-        </div>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brands">Recipe Book</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
     </div>
-  </div>
-</div> -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto"> 
+     <li ><a class="nav-link"href="#">recipe</a> </li>
+        <li><a href="#" class="nav-link">shopping list</a> </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown " appDropdown>
+      <a href="#" class="dropdown-toggle " role="button">manage recipe</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">save data</a> </li>
+      <li><a href="#">fetch date </a> </li>
+    </ul>
+    </li>
+  </ul>
+    </div>
+    </div>
+</nav>
+
+
+
