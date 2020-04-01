@@ -1,3 +1,4 @@
+import { ShoppingService } from './shopping-list/shopping.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,6 +13,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 // import { AppRoutingModule } from './app-routing-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { RecipeService } from './recipe/recipe.service';
 
 
 @NgModule({
@@ -33,7 +35,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
     // AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [RecipeService,ShoppingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

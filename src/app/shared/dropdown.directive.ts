@@ -8,7 +8,7 @@ constructor(private elref: ElementRef){
 
 }
     @HostBinding ('class.open')  isopen= false;
-    @HostListener('document:click',['$Event']) toggleopen(event:Event){
-    this.isopen=!this.elref.nativeElement.contains(event.target) ? !this.isopen : false ;
+    @HostListener('click') toggleopen(){
+    this.isopen=!this.isopen;
 }
 }

@@ -1,4 +1,4 @@
-<app-recipe-list (selectedrecipe)="selectedrecpie_recipecomponent = $event"></app-recipe-list>
+<app-recipe-list></app-recipe-list>
 <div class="col-xs-7">
     <app-recipe-details *ngIf="selectedrecpie_recipecomponent;else infotext"
     [recipeselectedel]="selectedrecpie_recipecomponent"
